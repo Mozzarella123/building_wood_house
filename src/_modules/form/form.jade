@@ -1,6 +1,8 @@
 mixin form
     .form_wrapper
-        h2.form_title Оставьте заявку на консультацию
+        h2.form_wrapper_title Оставьте заявку на консультацию
         form.form
-            input.input(placeholder='Номер телефона')
+            .input_wrapper
+                span.icon
+                input.form_input(placeholder='Номер телефона')
             button.btn.btn_orange Получить консультацию

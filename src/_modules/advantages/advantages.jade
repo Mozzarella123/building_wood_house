@@ -1,0 +1,10 @@
+mixin advantages
+    section.advantages
+        .container
+            h2.section_title Строим экологические дома из натурального дерева по доступным ценам
+            .advantages_items
+                each val in site.data.advantages
+                    div.advantages_items_item
+                        .advantages_items_item_image
+                            img(src=val.img)
+                        span.advantages_items_item_caption= val.text

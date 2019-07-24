@@ -1,0 +1,24 @@
+@import ../../_styles/vars
+
+.form_wrapper
+    background : #ffffff
+    padding : 30px 50px 40px 50px
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    &:before 
+        position: absolute
+        content: ''
+        bottom: -30px
+        left: 40px
+        right: 40px
+        height: 30px
+        @include gradient($green)
+    .form_title
+        text-align: center
+    .input 
+        border-radius: 15px
+        border: 1px solid #000000
+        padding : 10px
+

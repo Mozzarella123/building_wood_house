@@ -4,9 +4,18 @@ import 'lightbox2';
 import $ from 'jquery';
 
 function gallery() {
-  $('.gallery .gallery_items').slick({
-    slidesToShow : 3,
-    arrows : true
+  const selector = '.gallery';
+
+  $(selector).each((i, value) => {
+    const $gallery = $(value);
+
+    $gallery.find(`${selector}_items`).slick({
+      slidesToShow: 4,
+      arrows: true,
+      prevArrow: '<button class="arrow prev"/>',
+      nextArrow: '<button class="arrow next"/>',
+      appendArrows: $gallery
+    });
   });
 }
 

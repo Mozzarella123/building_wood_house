@@ -1,2 +1,18 @@
 .gallery 
-  
+  position: relative
+  .arrow 
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto
+    width: 57px
+    height: 57px
+    border: 0
+    background: url('/images/Arrow 2.1.svg') no-repeat
+    &.next 
+      left: auto
+      right: -100px
+      transform: scale(-1,1)
+    &.prev 
+      right: auto
+      left: -100px

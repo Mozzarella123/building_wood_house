@@ -5,9 +5,12 @@ include _modules/intro/intro
 
 include _modules/advantages/advantages
 include _modules/contacts/contacts
+include _modules/lead/lead
+
 include _modules/gallery_section/gallery_section
 
 block content
-    +intro
-    +advantages
-    +gallery_section('s', site.data.building_photo)
+  +intro
+  +gallery_section('Фотографии строительства', site.data.building_photo)
+  +gallery_section('Типовые проекты', site.data.projects_photo)
+  +lead

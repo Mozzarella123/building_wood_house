@@ -1,0 +1,7 @@
+mixin gallery(imagesArray)
+  .gallery
+    .gallery_items
+      each val in imagesArray
+        .gallery_items_item
+          .gallery_items_item_img 
+            img(src=val.src)

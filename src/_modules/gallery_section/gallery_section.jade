@@ -1,0 +1,7 @@
+include ../gallery/gallery
+
+mixin gallery_section(title, images)
+  section.gallery_section
+    .container
+      h2.section_title= title
+      +gallery(images)

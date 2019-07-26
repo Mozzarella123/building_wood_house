@@ -18,12 +18,13 @@ img
 //начало стилей
 html
   font-size: 24px
+  line-height: 28px
 
 body
   font-family: Roboto
   font-style: normal
   font-weight: 300
-  background: #E5E5E5
+  background: #fff
   color: #000000
 h1, h2
   margin-top: 0
@@ -57,9 +58,11 @@ section
 .btn_green
   @include gradient($green)
   color: #ffffff
-
+@import ../_modules/header/header
 @import ../_modules/intro/intro
 @import ../_modules/form/form
 @import ../_modules/gallery/gallery
 @import ../_modules/advantages/advantages
 @import ../_modules/why/why
+@import ../_modules/contacts/contacts
+@import ../_modules/footer/footer

@@ -1,9 +1,10 @@
-+mixin contacts 
+mixin contacts
   section.contacts
-    h2.section_title Наши контакты
-    .contacts_items 
-      each val in [{src : '/images/', caption : 'г.Вологда'}]
-        .contacts_items_item 
-          .contacts_items_item_img
-            img(src=val.src)
-          .contacts_items_item_caption=val.caption
+    .container
+      h2.section_title Наши контакты
+      .contacts_items
+        each val in site.data.contacts
+          .contacts_items_item
+            .contacts_items_item_img
+              img(src=val.src)
+            .contacts_items_item_caption=val.caption

@@ -1,0 +1,42 @@
+.site_header
+  padding: 50px 0
+  background: #fff
+  .container
+    display: grid
+    grid-template-columns: 2fr 1fr
+  .logo
+    position: absolute
+    left: -50px
+  &_telephones
+    text-align: right
+    &_tel
+      &:first-child
+        font-size: 32px
+      font-size: 27px
+      margin-bottom: 10px
+      display: block
+  &_menu
+    grid-row: 2
+
+    &_wrapper
+      display: flex
+      flex-direction: row
+      margin: 0
+      padding: 0
+    &_item
+      color: $green
+      list-style-type: none
+      margin-right: 20px
+      a
+        color: inherit
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+  &_title
+    padding-top: 1rem
+    span
+      display: block
+      &:nth-child(1)
+        margin-bottom: 0.5rem
+      &:nth-child(2)
+        font-size: 20px

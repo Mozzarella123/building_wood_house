@@ -58,6 +58,33 @@ section
 .btn_green
   @include gradient($green)
   color: #ffffff
+
+@media (max-width: $lg)
+  .container
+    width: 970px
+    padding: 0 60px
+
+@media (max-width: $md)
+  html
+    font-size: 22px
+  .container
+    width: 750px
+    padding: 0 30px
+
+@media (max-width: $sm)
+  html
+    font-size: 20px
+  .container
+    width: 576px
+    padding: 0 20px
+
+@media (max-width: $xs)
+  html
+    font-size: 18px
+  .container
+    width: 100%
+    padding: 0 10px
+
 @import ../_modules/header/header
 @import ../_modules/intro/intro
 @import ../_modules/form/form

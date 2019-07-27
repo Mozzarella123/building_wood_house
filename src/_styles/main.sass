@@ -31,6 +31,10 @@ h1, h2
 section
   padding-top: 50px
   padding-bottom: 50px
+
+button
+  outline: 0
+
 .section_title
   text-align: center
   font-size: 1.5rem
@@ -49,7 +53,7 @@ section
 .btn
   background-blend-mode: overlay, normal
   border-radius: 15px
-  padding: 10px 10px
+  padding: 14.5px 37px
   border: 0
 .btn_orange
   @include gradient(#B86212)
@@ -72,6 +76,9 @@ section
     padding: 0 30px
 
 @media (max-width: $sm)
+  section
+    padding-top: 35px
+    padding-bottom: 35px
   html
     font-size: 20px
   .container

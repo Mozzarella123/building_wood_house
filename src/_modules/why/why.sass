@@ -6,15 +6,17 @@
       display: grid
       grid-gap: 80px
       margin-bottom: 80px
+      &:last-child
+        margin-bottom: 0
       &:nth-child(2n)
-        grid-template-columns: 40% 60%
+        grid-template-columns: 4fr 6fr
         .why_items
           &_item
             &_image
               img
                 box-shadow: -16px 17px #EABA15
       &:nth-child(2n+1)
-        grid-template-columns: 60% 40%
+        grid-template-columns: 6fr 4fr
         .why_items
           &_item
             &_description
@@ -31,3 +33,21 @@
         img
           display: inline-block
 
+@media (max-width: $lg)
+  .why
+    &_items
+      &_item
+        grid-gap: 50px
+
+@media (max-width: $sm)
+  .why
+    &_items
+      &_item
+        margin-bottom: 40px
+        &:nth-child(2n+1),&:nth-child(2n)
+          grid-template-columns: 1fr
+          .why_items_item
+            &_image
+              grid-column: unset
+            &_description
+              grid-row: unset

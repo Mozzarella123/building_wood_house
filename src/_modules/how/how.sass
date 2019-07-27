@@ -38,3 +38,56 @@
             font-weight: 300
             font-size: 24px
             line-height: 28px
+
+@media (max-width: $lg)
+    .how
+        &_items
+            display: grid
+            grid-template-columns: 1fr 1fr
+            &_item
+                position: relative
+            &_item:before
+                content: ('')
+                position: absolute
+                width: 100px
+                height: 31px
+                background: url("/images/Arrow-left.png") no-repeat
+                background-size: 100%
+            &_item:nth-child(3):before
+                display: none
+            &_item:nth-child(4):before
+                display: inline
+            &_item:nth-child(5):before
+                display: none
+            &_item:nth-child(6):before
+                transform: scale(-1,1)
+            
+
+            
+
+
+@media (max-width: $sm)
+    .how
+        &_items
+            display: grid
+            grid-template-columns: 1fr
+            grid-row-gap: 150px
+            &_item
+                position: relative
+            &_item:before
+                content: ('')
+                position: absolute
+                top: -17%
+                right: 42%
+                width: 120px
+                height: 31px
+                background: url("/images/Arrow-left.png") no-repeat
+                background-size: 100%
+                transform: rotate(270deg)
+            &_item:nth-child(3):before
+                display: inline
+            &_item:nth-child(5):before
+                display: inline
+                transform: rotate(270deg)
+            &_item:nth-child(6):before
+                transform: rotate(270deg)

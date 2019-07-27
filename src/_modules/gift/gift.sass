@@ -17,3 +17,20 @@
         font-size: 24px
         line-height: 28px
         align-items: center
+
+@media (max-width: $lg)
+    .gift
+        &_items
+            display: grid
+            grid-teplate-columns: 1fr
+
+@media (max-width: $sm)
+    .gift
+        &_items
+            grid-template-columns : 1fr
+            &_item_description
+                grid-row: 2
+            &_item_image
+               grid-row: 1
+            
+            
